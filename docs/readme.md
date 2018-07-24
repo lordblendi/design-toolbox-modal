@@ -4,7 +4,7 @@ Modal component of the TenForce design toolbox.
 
 ## CSS
 
-This component is using [one](https://github.com/tenforce/design-toolbox-modal/blob/master/docs/sass/toolbox-modal.scss) CSS file.
+This component is using [one](https://github.com/tenforce/design-toolbox-modal/blob/master/docs/sass/style.scss) CSS file.
 
 ## HTML structure
 
@@ -33,8 +33,8 @@ For a more complex example, see the [columnpicker]([raw](https://github.com/tenf
 ## Usage
 ### Links to CSS files
 - main CSS
-  - [built](https://tenforce.github.io/design-toolbox-modal/sass/toolbox-modal.css)
-  - [raw](https://github.com/tenforce/design-toolbox-modal/blob/master/docs/sass/toolbox-modal.scss)
+  - [built](https://tenforce.github.io/design-toolbox-modal/sass/style.css)
+  - [raw](https://github.com/tenforce/design-toolbox-modal/blob/master/docs/sass/style.scss)
 
 ### Jekyll
 Add [the content of this file](https://github.com/tenforce/design-toolbox-modal/tree/master/docs/import/include-modal.html) to the another Jekyll project to include files from this project.
