@@ -1,27 +1,43 @@
-# Design Toolbox Table
+# Design Toolbox modal
 
-Selector component of the TenForce design toolbox.
+Modal component of the TenForce design toolbox.
 
 ## CSS
 
-This component is using a main CSS file.
+This component is using [one](https://github.com/tenforce/design-toolbox-modal/blob/master/docs/sass/toolbox-modal.scss) CSS file.
 
 ## HTML structure
 
-The Design documentation was built in Jekyll using SASS and Liquid.
+The Design documentation was built in Jekyll using SASS and Liquid. Most of the modals just use a table inside them. A simple error modal for example:
 
-- Structure for the readonly table with comments in Jekyll can be found [here](https://github.com/tenforce/design-toolbox-table/blob/master/docs/_includes/blocks/toolbox-table/toolbox-table-readonly.html).
-- Structure for the editable table with comments in Jekyll can be found [here](https://github.com/tenforce/design-toolbox-table/blob/master/docs/_includes/blocks/toolbox-table/toolbox-table-editable.html).
-- Structure for the table with an inner table with comments in Jekyll can be found [here](https://github.com/tenforce/design-toolbox-table/blob/master/docs/_includes/blocks/toolbox-table/toolbox-table.html) and the inner table [here](https://github.com/tenforce/design-toolbox-table/blob/master/docs/_includes/blocks/toolbox-table/toolbox-table-inner.html).
+``` html
+<div class="toolbox-modal" id="ms-error">
+  <div class="toolbox-table">
+    <div class="toolbox-table__row">
+      <ul class="toolbox-table__rowInner toolbox-table__rowInner--custom">
+        <li class="toolbox-table__cell">
+          <div class="toolbox-table__cellInner">
+            <div class="toolbox-note toolbox-note--error">
+              <p>Item could not be selected. <a href="#" class="link link--primary">Read more</a></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+```
+
+For a more complex example, see the [columnpicker]([raw](https://github.com/tenforce/design-toolbox-modal/blob/master/docs/_includes/popups/toolbox-modal-columnpicker.html).
 
 ## Usage
 ### Links to CSS files
 - main CSS
-  - [built](https://tenforce.github.io/design-toolbox-table/sass/toolbox-table.css)
-  - [raw](https://github.com/tenforce/design-toolbox-table/blob/master/docs/sass/toolbox-table.scss)
+  - [built](https://tenforce.github.io/design-toolbox-modal/sass/toolbox-modal.css)
+  - [raw](https://github.com/tenforce/design-toolbox-modal/blob/master/docs/sass/toolbox-modal.scss)
 
 ### Jekyll
-Add [this file](https://github.com/tenforce/design-toolbox-table/tree/master/docs/import/include-table.html) to the another Jekyll project to include files from this project.
+Add [the content of this file](https://github.com/tenforce/design-toolbox-modal/tree/master/docs/import/include-modal.html) to the another Jekyll project to include files from this project.
 
 ## Dependencies
 - [Tailwind v0.6.4](https://tailwindcss.com)
